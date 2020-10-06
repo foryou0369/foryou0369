@@ -75,8 +75,8 @@ font-weight: 350; color:#555; transition: all .3s ease;}
 .main .visual .scroll span {}
 .main .visual .scroll span::before {content: ""; display: inline-block; width: 34px; height: 56px;
 border: 2px solid #000; border-radius:60px;}
-.main .visual .scroll .top span.in::before {content: ""; display: inline-block; width: 6px; height: 6px;
-background: #000; border-radius: 100%; margin-left: -25px; }
+.main .visual .scroll .top span.in::before {content: ""; display: inline-block; width: 4px; height: 4px;
+background: #000; border-radius: 100%; margin-left: -23px; margin-bottom: 35px;}
 .main .visual .scroll p {margin-left: -13px; font-size: 20px;}
 
 .main .inset {position: absolute; left:600px; top:100px;}
