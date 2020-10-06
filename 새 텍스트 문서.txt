@@ -1,0 +1,63 @@
+.inset {position:relative; }
+
+
+.inset div[class^="box"] { 
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b2b7b7+0,8ab66b+39,7c56c7+80 */
+background: rgb(178,183,183); /* Old browsers */
+background: -moz-linear-gradient(-45deg,  rgba(178,183,183,1) 0%, rgba(138,182,107,1) 39%, rgba(124,86,199,1) 80%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  rgba(178,183,183,1) 0%,rgba(138,182,107,1) 39%,rgba(124,86,199,1) 80%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  rgba(178,183,183,1) 0%,rgba(138,182,107,1) 39%,rgba(124,86,199,1) 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2b7b7', endColorstr='#7c56c7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+border-radius:50%;
+filter: blur(30px);  
+opacity:.7;  
+
+}
+.inset .box { 
+position:relative;  
+z-index:10;  
+width:300px;
+height:400px;
+animation:move01 5s linear infinite  
+}
+
+<div class="inset">
+  <div class="box"></div>  
+  <div class="box2"></div>  
+  <div class="box3"></div>  
+</div>  
+
+
+
+.inset .box2 {
+opacity:.7;  
+position:absolute; top:0; left:0;  
+width:300px;
+height:400px;
+  
+animation-delay:.5s  
+}
+
+.inset .box3 {
+opacity:.7;  
+position:absolute; top:0; left:0;  
+width:300px;
+height:400px;  
+animation:move01 5s linear infinite;
+animation-delay:.5s  
+}
+
+
+
+@keyframes rotatem { 
+  0% { }
+  50% { }
+  100% {transform:rotate(360deg)}
+}
+@keyframes move01 { 
+  0% { }
+  50% {transform:translate(100px, 50px)}
+  100% {}
+}
+
+
